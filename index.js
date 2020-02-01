@@ -5,8 +5,8 @@ const cluster = require('cluster')
 const moment  = require('moment')
 
 const Schedule = require('./src/schedule.state')
-let ScheduleGlobal = new Schedule()
-let scheduleModel = ScheduleGlobal.modelSchedule
+const ScheduleGlobal = new Schedule()
+const scheduleModel = ScheduleGlobal.modelSchedule
 
 
 

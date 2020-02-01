@@ -5,12 +5,11 @@ class Schedule {
 
 
     modelSchedule( datum = {} ) {
-        const newDatum = { pid: '', message: '' }
-
-        if (datum.hasOwnProperty('pid'))newDatum['pid'] = datum.pid
-        if (datum.hasOwnProperty('message'))newDatum['message'] = datum.message
-                     
-        return datum
+        const newDatum = new Object
+        newDatum['pid'] = datum.pid ? datum.pid : ''
+        newDatum['message'] = datum.message ? datum.message : ''
+                             
+        return newDatum
     }
 
     setSchedule({ message, pid }) {  // void

@@ -22,7 +22,7 @@ if (cluster.isMaster) {
         worker.on('message', function (datum) {
 
             ScheduleGlobal.setSchedule(
-                scheduleModel(datum)
+                scheduleModel()
             )
 
 
